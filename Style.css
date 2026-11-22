@@ -1,0 +1,776 @@
+
+/* Chatter Landing Styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+
+/* Navigation Bar*/
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    color: #5438E8;
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link a:hover {
+    color: #5438E8;
+}
+
+/* Navigation Buttons */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    color: #5438E8;
+    border: 1px solid #5438E8;
+}
+
+.login-btn:hover {
+    background-color: #f0edff;
+}
+
+.signup-btn {
+    color: #ffffff;
+    background-color: #5438E8;
+    border: 1px solid #5438E8;
+}
+
+.signup-btn:hover {
+    background-color: #3920c2;
+}
+
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    min-height: 765px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("images/Hero_Image.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+}
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 750px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Get Started Button */
+
+.get-started-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5438E8;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #3920c2;
+}
+
+
+/* About Chatter */
+
+.about {
+    width: 100%;
+    padding: 70px 8%;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* About Text */
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #111111;
+    font-size: 48px;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+.about-text p {
+    color: #111111;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* About Image */
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+
+/*  Why you should join chatter */
+
+.goal {
+    width: 100%;
+    font-weight: 700;
+    padding: 65px 8%;
+    background-color: #ffffff;
+}
+
+.goal-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.goal-text {
+    text-align: center;
+}
+
+.goal-text h2 {
+    color: #111111;
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+
+.goal-text p {
+    color: #111111;
+    font: DM sens;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 750px;
+    text-align: justify;
+}
+
+
+/* FEATURE SECTION */
+
+.feature {
+    padding: 0 8% 55px;
+    background-color: #ffffff;
+}
+
+.features {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 324px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.feature-card img {
+    width: 92px;
+    height: 88px;
+    padding: 12px;
+    background-color: #f5f3fc;
+    border-radius: 50%;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111111;
+    margin-bottom: 10px;
+    line-height: 3;
+}
+
+.feature-card p {
+    font-size: 18px;
+    color: #626262;
+    line-height: 2.4;
+    font-weight: 400;
+}
+
+/* Testimonial Section */
+
+.testimonial {
+    width: 100%;
+    background-color: #FFF6E5;
+    padding: 70px 5%;
+}
+
+.testimonial-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Testimonial Image */
+
+.testimonial-image {
+    flex: 0 0 22%;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-image img {
+    width: 300px;
+    height: 292px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Testimonial Content */
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-quote {
+    font-size: 15px;
+    color: #111111;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+/* Author Details */
+
+.testimonial-author {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.testimonial-author h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.testimonial-author span {
+    font-size: 18px;
+    color: #111111;
+}
+
+/* Join Button */
+
+.join-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5438E8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #3920c2;
+}
+
+
+
+/* TABLET RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .nav-link {
+        gap: 15px;
+    }
+
+    .nav-link a {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        gap: 8px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 10px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .about-container {
+        gap: 30px;
+    }
+}
+
+/* Community Section */
+
+.community {
+    width: 100%;
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+.community-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+/* COMMUNITY IMAGES */
+
+.community-images {
+    flex: 0 0 300px;
+    height: 300px;
+    position: relative;
+}
+
+/* Individual Images */
+
+.community-image {
+    position: absolute;
+}
+
+
+.image {
+    position: absolute;
+    width: 154px;
+    height: 158px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #D9D9D9;
+
+}
+
+.image-one {
+    top: 0;
+    left: 0;
+}
+
+.image-two {
+    top: 127px;
+    left: 198px;
+}
+
+.image-three {
+    top: 254px;
+    left: 0;
+}
+
+
+/* Community Text */
+
+.community-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.community-content h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #171717;
+    margin: bottom 30px;
+}
+
+.community-content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+/* Community Button */
+
+.community-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5438E8;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: #fff6e6;
+    padding: 50px 6%;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer-logo .logo {
+    color: #543EE0;
+    font-size: 48px;
+    font-weight: 700;
+    text-decoration: none;
+    font: DM Sans;
+    font-width: 214;
+}
+
+.footer-column {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    list-style: none;
+}
+
+.footer-column h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+.footer-column a:hover {
+    color: #5438E8;
+}
+
+
+
+
+/* Max width- 960px */
+
+@media screen and (max-width: 960px) {
+
+    /* Navigation */
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .nav-link {
+        gap: 18px;
+    }
+
+    .nav-link a {
+        font-size: 13px;
+    }
+
+    .nav-buttons {
+        gap: 10px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 10px 16px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 550px;
+        padding: 50px 6%;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 19px;
+    }
+
+    /* About */
+    .about {
+        padding: 55px 6%;
+    }
+
+    .about-container {
+        gap: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 27px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    /* Goal */
+    .goal {
+        padding: 50px 6%;
+    }
+
+    .goal-text h2 {
+        font-size: 27px;
+    }
+
+    .goal-text p {
+        font-size: 14px;
+    }
+
+    /* Features */
+    .feature {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .features {
+        gap: 18px;
+    }
+
+    .feature-card {
+        padding: 10px;
+    }
+
+    .feature-card p {
+        font-size: 12px;
+    }
+
+    /* Community */
+    .community {
+        padding: 55px 6%;
+    }
+
+    .community-container {
+        gap: 30px;
+    }
+
+    .community-images {
+        flex-basis: 300px;
+    }
+
+    .community-content h2 {
+        font-size: 25px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 45px 6%;
+    }
+
+    .footer-container {
+        gap: 25px;
+    }
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 650px) {
+
+    /* Navigation */
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .nav-link {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 400px;
+        padding: 45px 6%;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    /* About */
+
+    .about {
+        padding: 45px 6%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    /* Goal */
+
+    .goal {
+        padding: 45px 6%;
+    }
+
+    .goal-text h2 {
+        font-size: 25px;
+    }
+
+    .goal-text p {
+        font-size: 14px;
+    }
+}
